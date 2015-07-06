@@ -2,6 +2,17 @@
 <html>
 <body>
 <h1>Hello World </h1>
+
+<script>
+  draw = function() {
+    noStroke();
+    //stroke(mouseY, ((mouseX + mouseY) % 255), mouseX); //RGB comes from mouseX
+    fill(mouseX, ((mouseX + mouseY) % 255), mouseY);
+    ellipse(mouseX, mouseY, 20, 20);
+};
+
+</script>
+
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
